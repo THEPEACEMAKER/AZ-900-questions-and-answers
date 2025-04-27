@@ -1,0 +1,123 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f4f7;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  color: #004578;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.question-container {
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 30px;
+  border: 1px solid #e1e1e1;
+}
+
+.timer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.timer span {
+  font-size: 16px;
+  color: #323130;
+  font-weight: 600;
+}
+
+p, .question-container pre {
+  font-size: 16px;
+  color: #323130;
+  margin-bottom: 20px;
+  white-space: pre-wrap;
+}
+
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ol li {
+  background-color: #e1ecf4;
+  border-radius: 4px;
+  padding: 12px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+ol li:hover {
+  background-color: #c7e0f4;
+}
+
+.selected {
+  background-color: #d6f5e3 !important;
+}
+
+.correct {
+  background-color: #c2f0c2 !important;
+}
+
+.incorrect {
+  background-color: #fddede !important;
+}
+
+.progress-bar {
+  background-color: #d0d0d0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.progress {
+  background-color: #0078d4;
+  height: 8px;
+  width: 100%;
+  transition: width 2s linear;
+}
+
+.explanation {
+  display: none;
+  margin-top: 16px;
+  border: 1px solid #d1d1d1;
+  padding: 12px;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.explanation.visible {
+  display: block;
+}
+
+select {
+  margin-top: 10px;
+  padding: 6px 8px;
+  font-size: 15px;
+  border-radius: 4px;
+  border: 1px solid #d1d1d1;
+}
+
+.question-note {
+  font-size: 10px;
+  color: #6a6a6a;
+  background-color: #f3f3f3;
+  padding: 10px 15px;
+  border-left: 4px solid #0078d4;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
